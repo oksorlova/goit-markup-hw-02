@@ -32,7 +32,7 @@ body {
   color: var(--primary-accent-color);
 }
 
-.navigation-list a {
+.navigation-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -41,8 +41,8 @@ body {
   color: var(--primary-text-color);
 }
 
-.navigation-list a:hover,
-.navigation-list a:focus {
+.navigation-item a:hover,
+.navigation-item a:focus {
   color: var(--primary-accent-color);
 }
 
@@ -61,6 +61,10 @@ body {
 
 .contacts-list:hover,
 .contacts-list:focus {
+  color: var(--primary-accent-color);
+}
+
+.current {
   color: var(--primary-accent-color);
 }
 
@@ -89,6 +93,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   cursor: pointer;
+  background-color: var(--primary-accent-color);
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #188ce8;
 }
 
 /*sections*/
@@ -111,6 +121,10 @@ body {
 
 .special-section-item {
   color: var(--secondary-text-color);
+}
+
+.section-team {
+  background-color: #f5f4fa;
 }
 
 .team-title {
@@ -137,6 +151,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
+  background-color: #f5f4fa;
 }
 
 .our-works-button:hover,
